@@ -43,6 +43,8 @@ Files are organised in the data/ directory
   
 2. Run Final_classifier_.py
 
+3. Classification tool geNomad was used as a benchmark comparison
+
 
 
 
