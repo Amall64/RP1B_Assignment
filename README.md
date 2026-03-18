@@ -41,7 +41,7 @@ Files are organised in the data/ directory
 
 1. Install dependencies in command prompt: pip install biopython pandas numpy scikit-learn matplotlib umap-learn
   
-2. Run Final_classifier.py
+2. Run Final_classifier_.py
 
 
 
