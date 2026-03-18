@@ -41,9 +41,10 @@ Files are organised in the data/ directory
 
 1. Install dependencies in command prompt: pip install biopython pandas numpy scikit-learn matplotlib umap-learn
   
-2. Run Final_classifier_.py
+2. Run in bash: python Final_classifier_.py
 
 3. Classification tool geNomad was used as a benchmark comparison
+   
 
 
 
