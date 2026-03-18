@@ -1,0 +1,368 @@
+createdb genomad_test_output/test_all_annotate/test_all_proteins.faa genomad_test_output/test_all_annotate/test_all_mmseqs2/query_db/query_db 
+
+MMseqs Version:                    	18.8cc5c
+Database type                      	0
+Shuffle input database             	true
+Createdb mode                      	0
+Write lookup file                  	1
+Offset of numeric ids              	0
+Threads                            	4
+Compressed                         	0
+Mask residues                      	0
+Mask residues probability          	0.9
+Mask lower case residues           	0
+Mask lower letter repeating N times	0
+Use GPU                            	0
+Verbosity                          	3
+
+Converting sequences
+[=
+Time for merging to query_db_h: 0h 0m 0s 324ms
+Time for merging to query_db: 0h 0m 0s 377ms
+Database type: Aminoacid
+Time for processing: 0h 0m 1s 778ms
+prefilter genomad_test_output/test_all_annotate/test_all_mmseqs2/query_db/query_db /home/amala/genomad_db/genomad_db/genomad_db genomad_test_output/test_all_annotate/test_all_mmseqs2/search_db/prefilter_db --threads 4 -s 4.2 --split 8 --split-mode 0 --max-seqs 10000000 --min-ungapped-score 25 -k 5 
+
+MMseqs Version:                    	18.8cc5c
+Substitution matrix                	aa:blosum62.out,nucl:nucleotide.out
+Seed substitution matrix           	aa:VTML80.out,nucl:nucleotide.out
+Sensitivity                        	4.2
+k-mer length                       	5
+Target search mode                 	0
+k-score                            	seq:2147483647,prof:2147483647
+Alphabet size                      	aa:21,nucl:5
+Max sequence length                	65535
+Max results per query              	10000000
+Split database                     	8
+Split mode                         	0
+Split memory limit                 	0
+Coverage threshold                 	0
+Coverage mode                      	0
+Compositional bias                 	1
+Compositional bias scale           	1
+Diagonal scoring                   	true
+Exact k-mer matching               	0
+Mask residues                      	1
+Mask residues probability          	0.9
+Mask lower case residues           	0
+Mask lower letter repeating N times	0
+Minimum diagonal score             	25
+Selected taxa                      	
+Include identical seq. id.         	false
+Spaced k-mers                      	1
+Preload mode                       	0
+Pseudo count a                     	substitution:1.100,context:1.400
+Pseudo count b                     	substitution:4.100,context:5.800
+Spaced k-mer pattern               	
+Local temporary path               	
+Threads                            	4
+Compressed                         	0
+Verbosity                          	3
+
+Query database size: 15121 type: Aminoacid
+Target split mode. Searching through 8 splits
+Estimated memory consumption: 578M
+Target database size: 227918 type: Profile
+Process prefiltering step 1 of 8
+
+Index table k-mer threshold: 89 at k-mer size 5 
+Index table: counting k-mers
+[=================================================================] 22.18K 9s 751ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 22.18K 37s 675ms
+Index statistics
+Entries:          299281932
+DB size:          1743 MB
+Avg k-mer size:   73.279758
+Top 10 k-mers
+    GWWPW	863
+    PPPWW	851
+    WWWPW	845
+    WWWPP	842
+    WWPPW	837
+    PPWWW	826
+    WWDPW	809
+    WWWPG	808
+    DPWWW	808
+    DWWPP	801
+Time for index table init: 0h 0m 49s 888ms
+k-mer similarity threshold: 89
+Starting prefiltering scores calculation (step 1 of 8)
+Query db start 1 to 15121
+Target db start 1 to 22178
+[=================================================================] 15.12K 1s 559ms
+
+0.920136 k-mers per position
+14104 DB matches per sequence
+0 overflows
+30 sequences passed prefiltering per query sequence
+21 median result list length
+343 sequences with 0 size result lists
+Time for merging to prefilter_db_tmp_0: 0h 0m 0s 85ms
+Time for merging to prefilter_db_tmp_0_tmp: 0h 0m 0s 162ms
+Process prefiltering step 2 of 8
+
+Index table k-mer threshold: 89 at k-mer size 5 
+Index table: counting k-mers
+[=================================================================] 24.94K 14s 32ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 24.94K 34s 87ms
+Index statistics
+Entries:          315250187
+DB size:          1835 MB
+Avg k-mer size:   77.189616
+Top 10 k-mers
+    WWWPP	989
+    GWWPP	951
+    DWWPP	925
+    WWPPP	918
+    DWWPW	887
+    PPPWD	873
+    PWWPW	872
+    GWWPW	870
+    DWPPW	865
+    WWPPW	862
+Time for index table init: 0h 0m 51s 193ms
+k-mer similarity threshold: 89
+Starting prefiltering scores calculation (step 2 of 8)
+Query db start 1 to 15121
+Target db start 22179 to 47115
+[=================================================================] 15.12K 12s 82ms
+
+0.920136 k-mers per position
+14440 DB matches per sequence
+0 overflows
+32 sequences passed prefiltering per query sequence
+22 median result list length
+373 sequences with 0 size result lists
+Time for merging to prefilter_db_tmp_1: 0h 0m 0s 281ms
+Time for merging to prefilter_db_tmp_1_tmp: 0h 0m 0s 725ms
+Process prefiltering step 3 of 8
+
+Index table k-mer threshold: 89 at k-mer size 5 
+Index table: counting k-mers
+[=================================================================] 26.50K 12s 193ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 26.50K 59s 309ms
+Index statistics
+Entries:          351832698
+DB size:          2044 MB
+Avg k-mer size:   86.146914
+Top 10 k-mers
+    GWWPP	1086
+    WWWPP	1059
+    DWWPP	1050
+    PPPWW	1045
+    GWWPW	1018
+    PPWWW	1016
+    GWWDW	1007
+    PDWWW	1005
+    PPWGW	1000
+    WWPWP	999
+Time for index table init: 0h 1m 15s 16ms
+k-mer similarity threshold: 89
+Starting prefiltering scores calculation (step 3 of 8)
+Query db start 1 to 15121
+Target db start 47116 to 73619
+[=================================================================] 15.12K 1s 882ms
+
+0.920136 k-mers per position
+16172 DB matches per sequence
+0 overflows
+35 sequences passed prefiltering per query sequence
+24 median result list length
+315 sequences with 0 size result lists
+Time for merging to prefilter_db_tmp_2: 0h 0m 0s 137ms
+Time for merging to prefilter_db_tmp_2_tmp: 0h 0m 0s 408ms
+Process prefiltering step 4 of 8
+
+Index table k-mer threshold: 89 at k-mer size 5 
+Index table: counting k-mers
+[=================================================================] 29.81K 18s 337ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 29.81K 47s 93ms
+Index statistics
+Entries:          372496587
+DB size:          2162 MB
+Avg k-mer size:   91.206507
+Top 10 k-mers
+    WWWPP	1202
+    GWWPP	1105
+    DWWPP	1090
+    DWWPW	1090
+    WWWPD	1079
+    WWWPW	1055
+    PWWPP	1053
+    WWPPW	1052
+    WWWGP	1039
+    WWDPP	1036
+Time for index table init: 0h 1m 9s 413ms
+k-mer similarity threshold: 89
+Starting prefiltering scores calculation (step 4 of 8)
+Query db start 1 to 15121
+Target db start 73620 to 103426
+[=================================================================] 15.12K 4s 987ms
+
+0.920136 k-mers per position
+17133 DB matches per sequence
+0 overflows
+37 sequences passed prefiltering per query sequence
+26 median result list length
+292 sequences with 0 size result lists
+Time for merging to prefilter_db_tmp_3: 0h 0m 0s 481ms
+Time for merging to prefilter_db_tmp_3_tmp: 0h 0m 1s 61ms
+Process prefiltering step 5 of 8
+
+Index table k-mer threshold: 89 at k-mer size 5 
+Index table: counting k-mers
+[=================================================================] 29.52K 27s 268ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 29.52K 1m 22s 947ms
+Index statistics
+Entries:          392319036
+DB size:          2276 MB
+Avg k-mer size:   96.060072
+Top 10 k-mers
+    WWWPP	1146
+    WWPPW	1121
+    GWWPW	1118
+    PPPWW	1116
+    WWGPW	1113
+    GWWPP	1108
+    PPWDW	1107
+    DWWPP	1106
+    PPWWW	1099
+    DWWPW	1091
+Time for index table init: 0h 1m 55s 109ms
+k-mer similarity threshold: 89
+Starting prefiltering scores calculation (step 5 of 8)
+Query db start 1 to 15121
+Target db start 103427 to 132944
+[=================================================================] 15.12K 26s 270ms
+
+0.920136 k-mers per position
+18205 DB matches per sequence
+0 overflows
+39 sequences passed prefiltering per query sequence
+27 median result list length
+266 sequences with 0 size result lists
+Time for merging to prefilter_db_tmp_4: 0h 0m 0s 196ms
+Time for merging to prefilter_db_tmp_4_tmp: 0h 0m 0s 379ms
+Process prefiltering step 6 of 8
+
+Index table k-mer threshold: 89 at k-mer size 5 
+Index table: counting k-mers
+[=================================================================] 29.37K 12s 159ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 29.37K 1m 6s 116ms
+Index statistics
+Entries:          366022342
+DB size:          2125 MB
+Avg k-mer size:   89.621276
+Top 10 k-mers
+    WWWPP	1203
+    PPWWW	1108
+    GWWPP	1107
+    PPWGW	1100
+    WWPPP	1092
+    WWWGP	1079
+    PPPWW	1079
+    DWWPP	1069
+    GWWPW	1056
+    WWPWP	1052
+Time for index table init: 0h 1m 21s 907ms
+k-mer similarity threshold: 89
+Starting prefiltering scores calculation (step 6 of 8)
+Query db start 1 to 15121
+Target db start 132945 to 162318
+[=================================================================] 15.12K 2s 745ms
+
+0.920136 k-mers per position
+16552 DB matches per sequence
+0 overflows
+36 sequences passed prefiltering per query sequence
+25 median result list length
+297 sequences with 0 size result lists
+Time for merging to prefilter_db_tmp_5: 0h 0m 0s 159ms
+Time for merging to prefilter_db_tmp_5_tmp: 0h 0m 0s 281ms
+Process prefiltering step 7 of 8
+
+Index table k-mer threshold: 89 at k-mer size 5 
+Index table: counting k-mers
+[=================================================================] 32.18K 27s 49ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 32.18K 18m 49s 381ms
+Index statistics
+Entries:          423191563
+DB size:          2452 MB
+Avg k-mer size:   103.619270
+Top 10 k-mers
+    WWPPW	1245
+    WWWPP	1234
+    DWWPP	1192
+    PPPWW	1182
+    WWPPP	1166
+    GWWPP	1144
+    WWWGP	1135
+    PPWWW	1134
+    WYPPW	1132
+    WWDPW	1126
+Time for index table init: 0h 19m 21s 993ms
+k-mer similarity threshold: 89
+Starting prefiltering scores calculation (step 7 of 8)
+Query db start 1 to 15121
+Target db start 162319 to 194496
+[=================================================================] 15.12K 6s 399ms
+
+0.920136 k-mers per position
+19761 DB matches per sequence
+0 overflows
+42 sequences passed prefiltering per query sequence
+29 median result list length
+245 sequences with 0 size result lists
+Time for merging to prefilter_db_tmp_6: 0h 0m 0s 318ms
+Time for merging to prefilter_db_tmp_6_tmp: 0h 0m 0s 493ms
+Process prefiltering step 8 of 8
+
+Index table k-mer threshold: 89 at k-mer size 5 
+Index table: counting k-mers
+[=================================================================] 33.42K 28s 642ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 33.42K 1m 23s 95ms
+Index statistics
+Entries:          414032694
+DB size:          2400 MB
+Avg k-mer size:   101.376703
+Top 10 k-mers
+    WWWPP	1375
+    PPPWW	1302
+    GWWPP	1277
+    DWWPP	1274
+    WWPPW	1270
+    PPWWW	1251
+    PWWPW	1238
+    GWWPW	1231
+    WWWGP	1230
+    WWPPP	1224
+Time for index table init: 0h 1m 56s 182ms
+k-mer similarity threshold: 89
+Starting prefiltering scores calculation (step 8 of 8)
+Query db start 1 to 15121
+Target db start 194497 to 227918
+[=================================================================] 15.12K 2s 258ms
+
+0.920136 k-mers per position
+18493 DB matches per sequence
+0 overflows
+41 sequences passed prefiltering per query sequence
+28 median result list length
+286 sequences with 0 size result lists
+Can not open result file genomad_test_output/test_all_annotate/test_all_mmseqs2/search_db/prefilter_db_tmp_7.2!

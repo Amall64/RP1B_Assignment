@@ -1,0 +1,16 @@
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│  Executing geNomad annotate (v1.11.2). This will perform gene calling in the input sequences and annotate the predicted proteins with geNomad's          │
+│  markers.                                                                                                                                                │
+│  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
+│  Outputs:                                                                                                                                                │
+│    genomad_test_output/test_all_annotate                                                                                                                 │
+│    ├── test_all_annotate.json (execution parameters)                                                                                                     │
+│    ├── test_all_genes.tsv (gene annotation data)                                                                                                         │
+│    ├── test_all_taxonomy.tsv (taxonomic assignment)                                                                                                      │
+│    ├── test_all_mmseqs2.tsv (MMseqs2 output file)                                                                                                        │
+│    └── test_all_proteins.faa (protein FASTA file)                                                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+[10:38:53] Executing genomad annotate.                                                                                                                      
+[10:38:53] Previous execution detected. Steps will be skipped unless their outputs are not found. Use the --restart option to force the execution of all the
+           steps again.                                                                                                                                     
+[10:38:53] test_all_proteins.faa was found. Skipping gene prediction with pyrodigal-gv.                                                                     

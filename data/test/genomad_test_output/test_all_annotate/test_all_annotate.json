@@ -1,0 +1,11 @@
+{
+    "module": "annotate",
+    "input": "test_all.fna",
+    "input_md5": "d1e196cdd00c74bcd3031610a30be85c",
+    "start_time": "2026-02-27T10:38:53.855436+00:00",
+    "parameters": {
+        "use_minimal_db": false,
+        "sensitivity": 4.2,
+        "evalue": 0.001
+    }
+}

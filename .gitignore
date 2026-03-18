@@ -1,0 +1,28 @@
+# Ignore data folder
+/data/
+
+# Ignore Word, PDF, Excel files
+*.docx
+*.pdf
+*.xlsx
+
+# Ignore other folders you don’t want on GitHub
+Background notes from papers/
+Testing geNomad (1)/
+Write up notes and drafts/
+complete/
+figures/
+tables/
+
+# Ignore all data files
+data/
+
+# Ignore results, figures, and outputs
+*.png
+*.pdf
+*.docx
+*.xlsx
+
+# Optional: ignore temporary folders
+__pycache__/
+*.log
